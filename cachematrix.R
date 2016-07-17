@@ -1,7 +1,7 @@
-## We want to create a function such that for an invertible matrix, 
-## it will return a cached matrix inverse. 
+## We want to create a function such that it will return a cached matrix inverse  
+## for an invertible matrix.
 
-## makeCacheMatrix function takes an invertible matrix 'x' as an argument, 
+## The makeCacheMatrix function takes an invertible matrix 'x' as an argument 
 ## and return a list of functions that do the following:
 ## 1) Set the value of the matrix. 
 ## 2) Get the value of the matrix.
@@ -23,9 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The following function calculates the inverse of the matrix based on the 
-## previous function. It first checks if the inverse has been computed. If so,
-## it skips the computation and returns the cached inverse. Otherwise, it 
+## The cacheSolve function calculates the inverse of the matrix based on the 
+## makeCacheMatrix function. It first checks if the inverse has been computed.
+## If so, it skips the computation and returns the cached inverse. Otherwise, it 
 ## computes the inverse of the marix and set the value of the inverse via the 
 ## setinverse function.
 
